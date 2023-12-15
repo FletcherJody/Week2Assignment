@@ -1,0 +1,99 @@
+/*Style the website you made last week using CSS with the following requirements:
+    Use only external CSS file (no internal or inline styling)
+    Every element must be styled.
+    Create style rules using class, id, and element selectors.
+
+*/
+/*The main page of the website is an h1 that I wanted styled differently than other h1s on associated pages.
+This h1 has the id websitetitle.
+It has a double border and background color.
+*/
+#websitetitle {
+    border-style: double;
+    background-color: rgb(148, 231, 231);
+}
+
+/*h1, h2, h3 are centered and are in cursive.
+*/
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: cursive;
+}
+
+/* Images all have border radius and and shadow and centered using display block.
+*/
+
+img {
+    border-radius: 5%;
+    filter: drop-shadow(2px 2px 5px rgb(68, 4, 25));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Bullets were removed from unordered list on home page.
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*All navigation bars have a border with rgb, background color that is consistent with other elements, 
+and links that are evenly spaced with using flex.
+*/
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid;
+    background-color: rgb(148, 231, 231);
+    color: rgb(134, 128, 128);
+    font-family: cursive;
+
+}
+
+/*Links are targeted to have black color rather than blue.
+*/
+.link {
+    color: black;
+}
+
+/*The table was styled to fit across page.
+Space was added between the row/content.
+Border lines were added.
+Every other even line has background color.
+*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(148, 231, 231);
+}
+
+/*Flex used to organize the form. Direction is in column format rather than side-by-side in row.
+Submit button is assigned class=stylesubmit to receive background color and border radius.
+*/
+.form-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.stylesubmit {
+    background-color: rgb(148, 231, 231);
+    color: black;
+    border-radius: 8px;
+}
